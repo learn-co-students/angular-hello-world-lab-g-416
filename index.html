@@ -7,6 +7,12 @@
     <title>Angular Application</title>
 </head>
 <body>
+    <div ng-app="app">
+      <div ng-controller="MainController">
+        <h1>Hi {{ name }}</h1>
+        <p>Why are you {{ mood }} ?</p>
+      </div>
+    </div>
 
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
