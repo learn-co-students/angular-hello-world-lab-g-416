@@ -20,7 +20,13 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['Chrome'],
+        browsers: ['Chrome_Windows'],
+        customLaunchers: {
+            Chrome_Windows: {
+              base: 'Chrome',
+              chromeDataDir: "chrome_data"
+            }
+        },
         singleRun: true,
         concurrency: Infinity
     })
