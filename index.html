@@ -11,6 +11,15 @@
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
-
+    <div class="app" ng-app="app">
+        <div ng-controller="MainController">
+            <h1>These are the Things</h1>
+            <ul>
+                <li>Power: {{ thing.power }}</li>
+                <li>Defense: {{ thing.defense }}</li>
+                <li>Health: {{ thing.health }}</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
