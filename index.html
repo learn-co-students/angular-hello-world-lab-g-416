@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Application</title>
 </head>
-<body>
-
-    <script src="js/angular.js"></script>
-    <script src="js/app/app.js"></script>
-    <script src="js/app/controllers/MainController.js"></script>
-
+<body ng-app='app'>
+    <div ng-controller='MainController'>
+        Hi, {{name}}!
+        Is your phone number really {{phone}}?
+        <script src="js/angular.js"></script>
+        <script src="js/app/app.js"></script>
+        <script src="js/app/controllers/MainController.js"></script>
+    </div>
 </body>
 </html>
