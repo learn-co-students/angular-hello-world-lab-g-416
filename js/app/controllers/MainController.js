@@ -1,11 +1,9 @@
-function MainController($scope){
-$scope.contact={
-    name: "Caitlin",
-    email: "testing@gmail.com",
-    phone: "2033133919"
-};
+function MainController($scope) {
+    $scope.name = "Caitlin";
+    $scope.email = "caitlin@caitlin.com";
+    $scope.phone = "012345";
+
 }
 
-var module=angular.module("app")
 
-module.controller("MainController", MainController) 
+angular.module('app').controller('MainController', MainController);
