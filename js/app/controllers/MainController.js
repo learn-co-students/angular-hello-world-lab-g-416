@@ -1,4 +1,4 @@
-function MainController(){
+function MainController($scope){
 $scope.contact={
     name: "Caitlin",
     email: "testing@gmail.com",
