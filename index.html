@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Angular Application</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div ng-app="app">
+      <div ng-controller="MainController">Hello, {{ name }}! I see your email is {{ email }} and your phone number is {{ phone }}</div>
+    </div>
 
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
-
-</body>
+  </body>
 </html>
