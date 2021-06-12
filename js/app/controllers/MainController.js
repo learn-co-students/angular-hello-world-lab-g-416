@@ -6,3 +6,7 @@ function MainController($scope) {
         second: 'another value'
     }
 }
+
+angular
+    .module('app')
+    .controller('MainController', MainController)
